@@ -4,10 +4,6 @@ body {
   overflow-x: hidden;
 }
 
-ol, ul {
-  list-style: none;
-}
-
 blockquote, q {
   quotes: none;
 }
@@ -191,27 +187,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .botm-line {
   background-color: #2b2b2b;
-  width: 34px;
+  width: 50px;
   height: 3px;
   display: inline-block;
-}
-
-.section-title:hover .botm-line {
-  width: 70px;
-  /* For Safari 3.1 to 6.0 */
-  -webkit-transition-property: width;
-  -webkit-transition-duration: 2s;
-  -webkit-transition-timing-function: linear;
-  -webkit-transition-delay: 1s;
-  /* Standard syntax */
-  transition-property: width;
-  transition-duration: 2s;
-  transition-timing-function: linear;
-  transition-delay: 1s;
-}
-
-p {
-  color: #888;
 }
 
 .icon {
@@ -235,6 +213,10 @@ p {
 h3.txt-tl {
   font-size: 24px;
   line-height: 1.35;
+}
+
+p.txt-para {
+  color: #888;
 }
 
 /****/
@@ -467,4 +449,12 @@ a, a:hover {
   color: white;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.experience-company {
+  color: #000;
+}
+
+.experience-myexperience {
+  color: #000;
 }
