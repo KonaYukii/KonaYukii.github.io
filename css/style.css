@@ -128,32 +128,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 25px 0px;
 }
 
-.btn-submit {
-  background: #e7b1b1;
-  border: 0px;
-  display: inline-block;
-  font-size: 16px;
-  text-transform: uppercase;
-  padding: 10px 40px;
-  font-weight: normal;
-  border-radius: 0px;
-  letter-spacing: 1px;
-  color: #000000;
-  position: relative;
-  overflow: hidden;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  margin-top: 20px;
-  border: 2px solid #e7b1b1;
-}
-
-.btn-submit:hover {
-  background: #fff;
-}
-
 /****/
 
 #cta-1 {
@@ -207,7 +181,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .icon-text {
   margin-left: 73px;
-  padding: 0px 25px 25px 0px;
 }
 
 h3.txt-tl {
@@ -306,12 +279,6 @@ p.txt-para {
 .black {
   color: #000 !important;
   font-weight: 600;
-}
-
-.btn-send {
-  border-radius: 0px;
-  color: #000;
-  background-color: #e7b1b1;
 }
 
 a, a:hover {
@@ -457,4 +424,37 @@ a, a:hover {
 
 .experience-myexperience {
   color: #000;
+}
+
+@media (min-width:992px) {
+  .experience-buttons {
+    margin-top: 20px;
+  }
+  
+  .experience-buttons a:nth-child(1) {
+    float: left;
+  }
+  
+  .experience-buttons a:nth-child(2) {
+    float: right;
+  }
+}
+
+@media (max-width:991px) {
+  .experience-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .experience-buttons > a {
+    align-self: center;
+  }
+}
+
+.experience-buttons > a > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
