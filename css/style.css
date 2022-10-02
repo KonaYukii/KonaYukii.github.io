@@ -1,49 +1,64 @@
+/** Page **/
+
 body {
   line-height: 1.5;
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
 }
 
-blockquote, q {
-  quotes: none;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
-  content: none;
+@media (max-width: 450px) {
+  body {
+    font-size: 14px;
+  }
 }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+/** Basic Styling **/
 
 .section-padding {
   padding: 30px 0px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif;
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
 }
 
-/**media Queries**/
+hr {
+  background-color: #000;
+  width: 50px;
+  height: 3px;
+  display: inline-block;
+}
+
+.icon {
+  position: relative;
+  height: auto;
+  width: 48px;
+  float: left;
+  margin-top: 14px;
+  margin-bottom: 20px;
+}
+
+.icon i {
+  font-size: 35px;
+}
+
+.text-description {
+  color: #888;
+}
+
+.image-logos {
+  margin-bottom: 15px;
+}
+
+/** Navbar **/
 
 .navbar-default {
   background-color: transparent;
-}
-
-.main-header {
-  background: url(../img/green.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.bg-color {
-  background-color: RGBA(0, 0, 0, 0.41);
-}
-
-.nav>li>a {
-  padding: 0px;
 }
 
 .navbar-brand {
@@ -80,286 +95,9 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
 }
 
-@media (max-width: 1199px) {
-	.navbar-collapse {
-		background: rgba(0, 0, 0, 0.8);
-		border-top: 0;
-	}
-}
-
 .top-nav-collapse {
   background: rgba(0, 0, 0, 0.8);
   padding: 25px 0;
-}
-
-.wrapper {
-  padding: 90px 0px 60px;
-}
-
-.top-title {
-  z-index: 5;
-  font-size: 27px;
-  font-weight: 700;
-  color: #fff;
-  line-height: 38px;
-  letter-spacing: 4px;
-  opacity: 1;
-  /* text-transform: uppercase; */
-}
-
-.sub-title {
-  font-size: 50px;
-  font-weight: 700;
-  color: #fff;
-  line-height: 71px;
-  letter-spacing: 4px;
-  opacity: 1;
-  /* text-transform: uppercase; */
-}
-
-.title {
-  font-size: 123px;
-  font-weight: 700;
-  color: #fff;
-  line-height: 88px;
-  letter-spacing: 4px;
-  opacity: 1;
-  text-transform: uppercase;
-  padding: 25px 0px;
-}
-
-/****/
-
-#cta-1 {
-  padding: 40px 0px;
-}
-
-.cta-info {
-  border: 5px solid #00B5FF;
-  padding: 40px 0px;
-}
-
-.cta-info h3 {
-  font-size: 24px;
-}
-
-.dec-tec {
-  font-size: 34px;
-}
-
-/****/
-
-#feature {
-  background-color: #f8f8f8;
-}
-
-.head-title {
-  color: #2b2b2b;
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.botm-line {
-  background-color: #2b2b2b;
-  width: 50px;
-  height: 3px;
-  display: inline-block;
-}
-
-.icon {
-  position: relative;
-  height: 48px;
-  width: 48px;
-  float: left;
-  margin-top: 14px;
-  margin-bottom: 20px;
-}
-
-.icon i {
-  font-size: 35px;
-}
-
-.icon-text {
-  margin-left: 73px;
-}
-
-h3.txt-tl {
-  font-size: 24px;
-  line-height: 1.35;
-}
-
-p.txt-para {
-  color: #888;
-}
-
-/****/
-
-.parallax {
-  background-attachment: fixed;
-  background-repeat: repeat-y;
-  background-position: center center;
-}
-
-.bg-image-2 {
-  background: url('../img/cta-banner.jpg') no-repeat center fixed;
-  -webkit-background-size: 100% auto;
-  -moz-background-size: 100% auto;
-  -o-background-size: 100% auto;
-  background-size: 100% auto;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.section {
-  position: relative;
-  padding: 60px 0 60px 0;
-  display: block;
-}
-
-.cta-txt h3 {
-  font-size: 32px;
-  margin-bottom: 10px;
-  font-weight: 700;
-  color: #2b2b2b;
-}
-
-.cta-txt p {
-  font-size: 16px;
-  color: #000000;
-}
-
-/****/
-
-.portfolio-box {
-  margin-bottom: 15px;
-}
-
-.padding-right-zero {
-  padding-right: 0px;
-}
-
-#contact {
-  background-color: #f8f8f8;
-}
-
-.validation {
-  color: red;
-  display: none;
-  margin: 0 0 20px;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-#sendmessage {
-  color: green;
-  border: 1px solid green;
-  display: none;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-#errormessage {
-  color: red;
-  display: none;
-  border: 1px solid red;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-#sendmessage.show, #errormessage.show, .show {
-  display: block;
-}
-
-.black {
-  color: #000 !important;
-  font-weight: 600;
-}
-
-a, a:hover {
-  color: #0000EE;
-}
-
-.cont-title {
-  font-size: 24px;
-  padding: 15px 0px;
-}
-
-.contact-info p span {
-  display: inline-block;
-}
-
-.contact-info p span {
-  width: 24px;
-  font-size: 24px;
-  vertical-align: middle;
-}
-
-.contact-info p a {
-  padding-left: 10px;
-}
-
-.contact-info p {
-  margin-bottom: 5px;
-}
-
-.contact-info p {
-  font-size: 18px;
-  line-height: 32px;
-  color: #000;
-}
-
-.contact-icon-container {
-  position: absolute;
-  top: -38px;
-  right: 0;
-  padding-right: 20px;
-  font-size: 320px;
-  color: #555;
-  line-height: 300px;
-  -ms-transform: rotate(20deg);
-  -moz-transform: rotate(20deg);
-  -webkit-transform: rotate(20deg);
-  transform: rotate(20deg);
-}
-
-/****/
-
-#footer {
-  background-color: #191919;
-  padding: 20px 0px;
-}
-
-.footer-copyright {
-  color: #fff;
-  line-height: 32px;
-  text-align: left;
-}
-
-.footer-social {
-  float: right;
-}
-
-.footer-social a {
-  font-size: 18px;
-  color: #666;
-}
-
-.link-dec, .link-dec:hover {
-  color: #000;
-}
-
-/****/
-
-@media (min-width: 451px) and (max-width: 900px) {
-  .section-title {
-    margin-bottom: 15px;
-  }
 }
 
 @media (max-width: 1199px) {
@@ -373,43 +111,84 @@ a, a:hover {
   .navbar-default .navbar-nav>li>a {
     text-align: center;
   }
-  .top-title {
-    font-size: 15px;
-  }
-  .title {
-    font-size: 50px;
-  }
-  .sub-title {
+
+  .navbar-collapse {
+		background: rgba(0, 0, 0, 0.8);
+		border-top: 0;
+	}
+}
+
+/** Header **/
+
+.main-header {
+  background: url(../img/green.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-color {
+  background-color: RGBA(0, 0, 0, 0.41);
+}
+
+.wrapper {
+  padding: 90px 0px 60px;
+}
+
+.main-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 71px;
+  letter-spacing: 4px;
+  opacity: 1;
+}
+
+.small-title {
+  z-index: 5;
+  font-size: 27px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 38px;
+  letter-spacing: 4px;
+  opacity: 1;
+}
+
+@media (max-width: 450px) {
+  .main-title {
     font-size: 24px;
   }
-  .footer-copyright {
-    text-align: center;
-  }
-  .padding-right-zero {
-    padding-right: 15px;
-  }
-  .section-title {
-    margin-bottom: 15px;
-  }
-  .cta-txt h3 {
-    font-size: 28px;
-  }
-  body {
-    font-size: 14px;
-  }
-  h3.txt-tl {
-    font-size: 20px;
+
+  .small-title {
+    font-size: 15px;
   }
 }
 
-/****/
+/** Education Styling **/
 
-.uoftlogo{
+#education p {
+  font-size: 16px;
+}
+
+#education img{
   max-width: 100%;
   height: 214px;
 }
 
-#interests .portfolio-box .img-text {
+/** Skills Styling **/
+
+#skills .icon-text {
+  margin-left: 73px;
+}
+
+@media (max-width: 450px) {
+  #skills .icon-text h3 {
+    font-size: 20px;
+  }
+}
+
+/** Interest Styling **/
+
+#interests .image-logos .img-text {
   position: absolute;
   bottom: 20px;
   background-color: rgba(0, 0, 0, 0.7);
@@ -418,12 +197,35 @@ a, a:hover {
   padding-right: 20px;
 }
 
-.experience-company {
-  color: #000;
+/** Contact Styling **/
+
+#contact {
+  background-color: #f8f8f8;
 }
 
-.experience-myexperience {
-  color: #000;
+.contact-info p {
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.contact-info p span {
+  display: inline-block;
+  width: 24px;
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.contact-info p a {
+  padding-left: 10px;
+}
+
+/** Experience Page Styling **/
+
+.experience-buttons > a > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 @media (min-width:992px) {
@@ -453,8 +255,4 @@ a, a:hover {
   }
 }
 
-.experience-buttons > a > div {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
+/** Others **/
