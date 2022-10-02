@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1199px) {
 	.navbar-collapse {
 		background: rgba(0, 0, 0, 0.8);
 		border-top: 0;
@@ -362,7 +362,7 @@ a, a:hover {
   }
 }
 
-@media (min-width: 20px) and (max-width: 450px) {
+@media (max-width: 1199px) {
   .navbar-toggle:hover, .navbar-toggle {
     background-color: #fff;
     color: #000;
