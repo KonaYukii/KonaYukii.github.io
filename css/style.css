@@ -49,10 +49,20 @@ hr {
 
 .text-description {
   color: #888;
+  word-break: break-word;
 }
 
 .image-logos {
   margin-bottom: 15px;
+}
+
+.row .display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row .display-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
 }
 
 /** Navbar **/
@@ -61,10 +71,22 @@ hr {
   background-color: transparent;
 }
 
+.navbar-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.navbar-header {
+  float: left;
+}
+
 .navbar-brand {
-  padding: 0px;
   height: inherit;
   font-family: 'Lato', sans-serif;
+  padding: 0px;
+  line-height: normal;
+  text-align: center;
 }
 
 .navbar-default .navbar-brand {
@@ -75,14 +97,14 @@ hr {
   letter-spacing: 2px;
 }
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #e7b1b1;
   text-transform: uppercase;
 	background-color: transparent;
   font-weight: bold;
 }
 
-.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:focus {
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:focus {
   color: #fff;
   padding: 10px 20px;
   text-transform: uppercase;
@@ -105,16 +127,18 @@ hr {
     background-color: #fff;
     color: #000;
   }
-  .navbar-toggle {
-    margin-top: 0px;
+
+  .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:focus {
+    padding: 10px 10px;
   }
-  .navbar-default .navbar-nav>li>a {
+
+  .navbar-default .navbar-nav > li > a {
     text-align: center;
+    overflow-wrap: break-word;
   }
 
   .navbar-collapse {
 		background: rgba(0, 0, 0, 0.8);
-		border-top: 0;
 	}
 }
 
@@ -169,9 +193,16 @@ hr {
   font-size: 16px;
 }
 
-#education img{
+#education img {
   max-width: 100%;
   height: 214px;
+}
+
+/** Work Experience Styling **/
+
+#work_experience img{
+  max-width: 100%;
+  height: auto;
 }
 
 /** Skills Styling **/
@@ -197,27 +228,35 @@ hr {
   padding-right: 20px;
 }
 
+@media (max-width: 450px) {
+  #interests .image-logos .img-text {
+    position: static;
+    padding: 0px 10px;
+    text-align: center;
+  }
+}
+
 /** Contact Styling **/
 
 #contact {
   background-color: #f8f8f8;
 }
 
-.contact-info p {
+.contact-info div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 5px;
-  font-size: 18px;
-  line-height: 32px;
 }
 
-.contact-info p span {
-  display: inline-block;
+.contact-info div span {
   width: 24px;
   font-size: 24px;
-  vertical-align: middle;
 }
 
-.contact-info p a {
-  padding-left: 10px;
+.contact-info div a {
+  font-size: 18px;
+  word-break: break-all;
 }
 
 /** Experience Page Styling **/
