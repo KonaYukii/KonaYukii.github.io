@@ -60,6 +60,7 @@ hr {
   display: flex;
   flex-wrap: wrap;
 }
+
 .row .display-flex > [class*='col-'] {
   display: flex;
   flex-direction: column;
@@ -200,9 +201,21 @@ hr {
 
 /** Work Experience Styling **/
 
-#work_experience img{
+#work_experience img {
   max-width: 100%;
   height: auto;
+}
+
+#work_experience .image-logos {
+  padding: 4px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#work_experience .learn-more {
+  display: block;
+  text-align: end;
+  padding: 6px 12px;
 }
 
 /** Skills Styling **/
