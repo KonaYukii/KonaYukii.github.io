@@ -323,7 +323,7 @@ h6 {
 #hero {
   width: 100%;
   height: 75vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/newyork3.jpg") center bottom;
   background-size: cover;
   padding: 0 15px;
 }
@@ -411,7 +411,7 @@ section {
 }
 
 .section-title p {
-  margin-bottom: 0;
+  margin-bottom: 5;
 }
 
 /*--------------------------------------------------------------
@@ -594,7 +594,7 @@ section {
 }
 
 .resume .resume-item {
-  padding: 0 0 20px 20px;
+  padding: 0 0 0 20px;
   margin-top: -2px;
   border-left: 2px solid #d43076;
   position: relative;
