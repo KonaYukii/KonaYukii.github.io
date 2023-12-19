@@ -387,7 +387,7 @@ section {
 }
 
 .section-title {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .section-title h2 {
@@ -550,7 +550,7 @@ section {
 # Skills
 --------------------------------------------------------------*/
 .skills .progress {
-  height: 50px;
+  height: 30px;
   display: block;
   background: none;
 }
@@ -559,7 +559,6 @@ section {
   padding: 10px 0;
   margin: 0 0 6px 0;
   text-transform: uppercase;
-  display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   color: #2c4964;
