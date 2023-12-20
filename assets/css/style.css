@@ -667,11 +667,11 @@ section {
   z-index: -1;
 }
 
-.services .icon-box:hover::before {
+/* .services .icon-box:hover::before {
   background: #d43076;
   height: 100%;
   border-radius: 0px;
-}
+} */
 
 .services .icon {
   margin: 0 auto 30px auto;
@@ -707,7 +707,7 @@ section {
   margin-bottom: 0;
 }
 
-.services .icon-box:hover .title a,
+/* .services .icon-box:hover .title a,
 .services .icon-box:hover .description {
   color: #fff;
 }
@@ -718,7 +718,7 @@ section {
 
 .services .icon-box:hover .icon i {
   color: #d43076;
-}
+} */
 
 @media (max-width: 768px) {
   .services .icon-box::before {
