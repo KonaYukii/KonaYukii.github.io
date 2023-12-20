@@ -476,7 +476,7 @@ section {
 }
 
 .about .content p {
-  margin-bottom: 0;
+  margin-bottom: 5;
 }
 
 .about .content .count-box {
@@ -503,29 +503,20 @@ section {
 }
 
 .about .content .count-box p {
-  padding: 15px 0 0 0;
   margin: 0 0 0 50px;
-  font-family: "Playfair Display", serif;
-  font-size: 14px;
-  color: #437099;
-}
-
-.about .content .count-box a {
   font-weight: 600;
   display: block;
-  margin-top: 20px;
   color: #437099;
-  font-size: 15px;
+  font-size: 14px;
   font-family: "Poppins", sans-serif;
-  transition: ease-in-out 0.3s;
 }
 
 .about .content .count-box a:hover {
-  color: #6b96be;
+  color: #437099;
 }
 
 .about .image {
-  background: url("../img/me.jpg") center center no-repeat;
+  background: url("../img/amy.jpg") center top no-repeat;
   background-size: cover;
   min-height: 400px;
 }
