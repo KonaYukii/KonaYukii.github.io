@@ -138,8 +138,6 @@ h6 {
 }
 
 .navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
 .navbar li:hover>a {
   color: #d43076;
 }
@@ -318,9 +316,9 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Overview Section
 --------------------------------------------------------------*/
-#hero {
+#overview {
   width: 100%;
   height: 75vh;
   background: url("../img/newyork3.jpg") center bottom;
@@ -328,7 +326,7 @@ h6 {
   padding: 0 15px;
 }
 
-#hero .intro {
+#overview .intro {
   background: rgba(0, 0, 0, 0.2);
   width: fit-content;
   padding: 20px 20px;
@@ -338,7 +336,7 @@ h6 {
   align-items: center;
 }
 
-#hero h1 {
+#overview h1 {
   margin: 0 0 10px 0;
   font-size: 48px;
   font-weight: 700;
@@ -346,7 +344,7 @@ h6 {
   color: #fff;
 }
 
-#hero h2 {
+#overview h2 {
   color: #eee;
   margin-bottom: 10px;
   font-size: 24px;
@@ -354,31 +352,31 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
-#hero .btn-get-started {
+#overview .btn-get-started {
   font-size: 64px;
   transition: 0.5s;
   color: #fff;
   height: 60px;
 }
 
-#hero .btn-get-started:hover {
+#overview .btn-get-started:hover {
   padding-top: 10px;
   color: #d43076;
 }
 
 @media (min-width: 1024px) {
-  #hero {
+  #overview {
     background-attachment: fixed;
   }
 }
 
 @media (max-width: 768px) {
-  #hero h1 {
+  #overview h1 {
     font-size: 28px;
     line-height: 36px;
   }
 
-  #hero h2 {
+  #overview h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
@@ -543,36 +541,36 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Skills
+# Technologies
 --------------------------------------------------------------*/
-.skills .technology {
+.technologies .technology {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
 }
 
-.skills .progress {
+.technologies .progress {
   display: block;
   background: none;
 }
 
-.skills .progress .skill {
+.technologies .progress .app {
   text-transform: uppercase;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   color: #2c4964;
 }
 
-.skills .progress .skill .val {
+.technologies .progress .app .val {
   float: right;
   font-style: normal;
 }
 
-.skills .progress-bar-wrap {
+.technologies .progress-bar-wrap {
   background: #fbeaf1;
 }
 
-.skills .progress-bar {
+.technologies .progress-bar {
   width: 1px;
   height: 10px;
   transition: 0.9s;
@@ -641,9 +639,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
+# Skills
 --------------------------------------------------------------*/
-.services .icon-box {
+.skills .icon-box {
   padding: 20px 15px;
   position: relative;
   overflow: hidden;
@@ -655,7 +653,7 @@ section {
   z-index: 1;
 }
 
-.services .icon-box::before {
+.skills .icon-box::before {
   content: "";
   position: absolute;
   top: 0;
@@ -666,13 +664,13 @@ section {
   z-index: -1;
 }
 
-/* .services .icon-box:hover::before {
+/* .skills .icon-box:hover::before {
   background: #d43076;
   height: 100%;
   border-radius: 0px;
 } */
 
-.services .icon {
+.skills .icon {
   margin: 0 auto 30px auto;
   padding-top: 10px;
   display: inline-block;
@@ -684,55 +682,55 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.services .icon i {
+.skills .icon i {
   font-size: 36px;
   line-height: 1;
   color: #fff;
 }
 
-.services .title {
+.skills .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-.services .title a {
+.skills .title a {
   color: #111;
 }
 
-.services .description {
+.skills .description {
   font-size: 15px;
   line-height: 24px;
   margin-bottom: 0;
 }
 
-/* .services .icon-box:hover .title a,
-.services .icon-box:hover .description {
+/* .skills .icon-box:hover .title a,
+.skills .icon-box:hover .description {
   color: #fff;
 }
 
-.services .icon-box:hover .icon {
+.skills .icon-box:hover .icon {
   background: #fff;
 }
 
-.services .icon-box:hover .icon i {
+.skills .icon-box:hover .icon i {
   color: #d43076;
 } */
 
 @media (max-width: 768px) {
-  .services .icon-box::before {
+  .skills .icon-box::before {
     bottom: 60%;
   }
 }
 
 /*--------------------------------------------------------------
-# Portfolio
+# Interests
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
+.interests .interests-item {
   margin-bottom: 30px;
 }
 
-.portfolio #portfolio-flters {
+.interests #interests-flters {
   padding: 0;
   margin: 0 auto 35px auto;
   list-style: none;
@@ -743,7 +741,7 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.08);
 }
 
-.portfolio #portfolio-flters li {
+.interests #interests-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px 8px 15px;
@@ -756,23 +754,23 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
+.interests #interests-flters li:hover,
+.interests #interests-flters li.filter-active {
   color: #d43076;
 }
 
-.portfolio #portfolio-flters li:last-child {
+.interests #interests-flters li:last-child {
   margin-right: 0;
 }
 
-.portfolio .portfolio-wrap {
+.interests .interests-wrap {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
 
-.portfolio .portfolio-wrap::before {
+.interests .interests-wrap::before {
   content: "";
   background: rgba(44, 73, 100, 0.6);
   position: absolute;
@@ -785,7 +783,7 @@ section {
   opacity: 0;
 }
 
-.portfolio .portfolio-wrap .portfolio-info {
+.interests .interests-wrap .interests-info {
   opacity: 0;
   position: absolute;
   top: 10%;
@@ -796,19 +794,19 @@ section {
   transition: all ease-in-out 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-info h4 {
+.interests .interests-wrap .interests-info h4 {
   font-size: 20px;
   color: #fff;
   font-weight: 600;
 }
 
-.portfolio .portfolio-wrap .portfolio-info p {
+.interests .interests-wrap .interests-info p {
   color: #ffffff;
   font-size: 14px;
   text-transform: uppercase;
 }
 
-.portfolio .portfolio-wrap .portfolio-links {
+.interests .interests-wrap .interests-links {
   opacity: 0;
   left: 0;
   right: 0;
@@ -819,7 +817,7 @@ section {
   transition: all ease-in-out 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a {
+.interests .interests-wrap .interests-links a {
   color: #fff;
   margin: 0 2px;
   font-size: 28px;
@@ -827,11 +825,11 @@ section {
   transition: 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a:hover {
+.interests .interests-wrap .interests-links a:hover {
   color: #e684ae;
 }
 
-.portfolio .portfolio-wrap::before {
+.interests .interests-wrap::before {
   top: 0;
   left: 0;
   right: 0;
@@ -839,33 +837,33 @@ section {
   opacity: 0.5;
 }
 
-.portfolio .portfolio-wrap .portfolio-info {
+.interests .interests-wrap .interests-info {
   opacity: 1;
   top: calc(50% - 48px);
 }
 
-.portfolio .portfolio-wrap .portfolio-links {
+.interests .interests-wrap .interests-links {
   opacity: 1;
   bottom: calc(50% - 50px);
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details
+# Interests Details
 --------------------------------------------------------------*/
-.portfolio-details {
+.interests-details {
   padding-top: 40px;
 }
 
-.portfolio-details .portfolio-details-slider img {
+.interests-details .interests-details-slider img {
   width: 100%;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination {
+.interests-details .interests-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.interests-details .interests-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -873,16 +871,16 @@ section {
   border: 1px solid #d43076;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.interests-details .interests-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #d43076;
 }
 
-.portfolio-details .portfolio-info {
+.interests-details .interests-info {
   padding: 30px;
   box-shadow: 0px 0 30px rgba(44, 73, 100, 0.08);
 }
 
-.portfolio-details .portfolio-info h3 {
+.interests-details .interests-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -890,27 +888,27 @@ section {
   border-bottom: 1px solid #eee;
 }
 
-.portfolio-details .portfolio-info ul {
+.interests-details .interests-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.interests-details .interests-info ul li+li {
   margin-top: 10px;
 }
 
-.portfolio-details .portfolio-description {
+.interests-details .interests-description {
   padding-top: 30px;
 }
 
-.portfolio-details .portfolio-description h2 {
+.interests-details .interests-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-description p {
+.interests-details .interests-description p {
   padding: 0;
 }
 
