@@ -31,9 +31,11 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column align-items-center justify-content-center">
-    <h1>Hi, I'm Amy!</h1>
-    <h2>I am a Research Coordinator at Hearst Magazines</h2>
-    <a href="#about" class="btn-get-started scrollto"><i class="bi bi-chevron-double-down"></i></a>
+    <div class="intro">
+      <h1>Hi, I'm Amy!</h1>
+      <h2>I am a Research Coordinator at Hearst Magazines</h2>
+      <a href="#about" class="btn-get-started scrollto"><i class="bi bi-chevron-double-down"></i></a>
+    </div>
   </section><!-- End Hero -->
 
   <!-- ======= Header ======= -->
@@ -81,28 +83,28 @@
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
                     <i class="bi bi-linkedin"></i>
-                    <p><a href="https://www.linkedin.com/in/amyli97/" target= "_blank"> LinkedIn</a></p>
+                    <a href="https://www.linkedin.com/in/amyli97/" target= "_blank">LinkedIn</a>
                   </div>
                 </div>
 
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
                     <i class="bi bi-geo-alt-fill"></i>
-                    <p>New York, NY</p>
+                    <span>New York, NY</span>
                   </div>
                 </div>
 
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
                     <i class="bi bi-github"></i>
-                    <p><a href="https://github.com/KonaYukii" target= "_blank"> GitHub</a></p>
+                    <a href="https://github.com/KonaYukii" target= "_blank">GitHub</a>
                   </div>
                 </div>
 
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
                     <i class="bi bi-envelope"></i>
-                    <p><a href="mailto:amyli07cd@gmail.com" target="_blank"> Email</a></p>
+                    <a href="mailto:amyli07cd@gmail.com" target="_blank">Email</a>
                   </div>
                 </div>
               </div>
@@ -123,8 +125,8 @@
 
         <div class="row skills-content">
 
-          <div class="col-lg-4">
-            <h4>Data Analytics and Business Intelligence</h4>
+          <div class="technology col-lg-4">
+            <h5>Data Analytics and Business Intelligence</h5>
             <div class="progress">
               <i class="bi bi-chevron-right"></i>
               <span class="skill">New Age</span>
@@ -166,8 +168,8 @@
             </div>
           </div>
 
-          <div class="col-lg-4">
-            <h4>Web Development and Design</h4>
+          <div class="technology col-lg-4">
+            <h5>Web Development and Design</h5>
             <div class="progress">
               <i class="bi bi-chevron-right"></i>
               <span class="skill">HTML</span>
@@ -190,8 +192,8 @@
 
           </div>
 
-          <div class="col-lg-4">
-            <h4>Programming and Databases</h4>
+          <div class="technology col-lg-4">
+            <h5>Programming and Databases</h5>
             <div class="progress">
               <i class="bi bi-chevron-right"></i>
               <span class="skill">Python</span>
@@ -443,74 +445,43 @@
 
       </div>
     </section><!-- End Portfolio Section -->
-    
+
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact section-bg">
       <div class="container">
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Get in touch with me!</p>
         </div>
 
         <div class="row">
-
           <div class="col-lg-4 col-md-4">
-            <div class="contact-about">
-              <h3>Lonely</h3>
-              <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
-              <div class="social-links">
-                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <div class="info">
+
+              <div class="d-flex align-items-center">
+                <i class="bi bi-linkedin"></i>
+                <a href="https://www.linkedin.com/in/amyli97/" target= "_blank">LinkedIn</a>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-4">
+          <div class="col-lg-4 col-md-4">
             <div class="info">
               <div class="d-flex align-items-center">
-                <i class="bi bi-geo-alt"></i>
-                <p>A108 Adam Street<br>New York, NY 535022</p>
+                <i class="bi bi-github"></i>
+                <a href="https://github.com/KonaYukii" target= "_blank">GitHub</a>
               </div>
-
-              <div class="d-flex align-items-center mt-4">
-                <i class="bi bi-envelope"></i>
-                <p>info@example.com</p>
-              </div>
-
-              <div class="d-flex align-items-center mt-4">
-                <i class="bi bi-phone"></i>
-                <p>+1 5589 55488 55s</p>
-              </div>
-
             </div>
           </div>
-
-          <div class="col-lg-5 col-md-8">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+          <div class="col-lg-4 col-md-4">
+            <div class="info">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-envelope"></i>
+                <a href="mailto:amyli07cd@gmail.com" target="_blank">Email</a>
               </div>
-              <div class="form-group mt-3">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+            </div>
           </div>
-
+          
         </div>
 
       </div>

@@ -328,6 +328,16 @@ h6 {
   padding: 0 15px;
 }
 
+#hero .intro {
+  background: rgba(0, 0, 0, 0.2);
+  width: fit-content;
+  padding: 20px 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 48px;
@@ -482,6 +492,9 @@ section {
 .about .content .count-box {
   padding: 20px 0;
   width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
 }
 
 .about .content .count-box i {
@@ -492,23 +505,15 @@ section {
   line-height: 0;
 }
 
-.about .content .count-box span {
-  font-size: 36px;
-  line-height: 20px;
-  display: block;
-  font-weight: 700;
-  color: #2c4964;
-  margin-left: 50px;
-  font-family: "Playfair Display", serif;
-}
-
-.about .content .count-box p {
-  margin: 0 0 0 50px;
+.about .content .count-box a, .about .content .count-box span {
   font-weight: 600;
   display: block;
-  color: #437099;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
+}
+
+.about .content .count-box span {
+  color: #437099;
 }
 
 .about .content .count-box a:hover {
@@ -540,15 +545,18 @@ section {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
+.skills .technology {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
 .skills .progress {
-  height: 30px;
   display: block;
   background: none;
 }
 
 .skills .progress .skill {
-  padding: 10px 0;
-  margin: 0 0 6px 0;
   text-transform: uppercase;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
@@ -823,20 +831,20 @@ section {
   color: #e684ae;
 }
 
-.portfolio .portfolio-wrap:hover::before {
+.portfolio .portfolio-wrap::before {
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 1;
+  opacity: 0.5;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info {
+.portfolio .portfolio-wrap .portfolio-info {
   opacity: 1;
   top: calc(50% - 48px);
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-links {
+.portfolio .portfolio-wrap .portfolio-links {
   opacity: 1;
   bottom: calc(50% - 50px);
 }
@@ -1053,9 +1061,14 @@ section {
   margin-right: 15px;
 }
 
-.contact .info p {
+.contact .info a {
   font-size: 14px;
+  color: #d43076;
   margin: 0;
+}
+
+.contact .info a:hover {
+  color: #437099;
 }
 
 .contact .php-email-form .error-message {
