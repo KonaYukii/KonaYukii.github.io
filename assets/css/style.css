@@ -317,7 +317,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 30px 0;
 }
 
 .section-bg {
@@ -356,7 +356,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about .content {
-  padding: 30px 0;
+  padding-top: 30px;
 }
 
 .about .content h3 {
@@ -425,19 +425,24 @@ section {
 /*--------------------------------------------------------------
 # Technologies
 --------------------------------------------------------------*/
+.technologies .technologies-content {
+  row-gap: 20px;
+}
+
 .technologies .technology {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
 }
 
-.technologies .progress {
+.technologies .bullets {
   display: block;
   background: none;
 }
 
-.technologies .progress .app {
+.technologies .bullets .app {
   text-transform: uppercase;
+  font-size: 14px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   color: #2c4964;
@@ -583,7 +588,7 @@ section {
 
 .interests .interests-wrap .interests-info {
   opacity: 1;
-  top: calc(50% - 48px);
+  top: calc(50%);
   position: absolute;
   left: 0;
   right: 0;
@@ -592,7 +597,7 @@ section {
 }
 
 .interests .interests-wrap .interests-info h4 {
-  font-size: 20px;
+  font-size: 1.2em;
   color: #fff;
   font-weight: 600;
 }
@@ -600,6 +605,10 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact .contact-info {
+  row-gap: 20px;
+}
+
 .contact .info {
   color: #5a656e;
 }
